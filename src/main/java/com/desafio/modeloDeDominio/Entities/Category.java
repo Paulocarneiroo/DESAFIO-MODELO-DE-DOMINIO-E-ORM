@@ -15,7 +15,6 @@ public class Category {
     @Column(columnDefinition = "TEXT")
     private String description;
 
-
     @OneToMany(mappedBy = "category")
     private Set<Activity> activities = new HashSet<>();
 
